@@ -22,15 +22,25 @@ document.getElementById("year").textContent = new Date().getFullYear();
   els.forEach((e) => io.observe(e));
 })();
 
-// ====== 读取与官网共用的 update.json ======
+// ====== 读取更新清单 update.json ======
+// 单一真值放在源码仓库 guyue-toolbox（桌面端程序读的也是它）；
+// 若该地址不可达，则回退到官网同目录的 ./update.json（同内容副本）。
+const UPDATE_SOURCES = [
+  "https://raw.githubusercontent.com/Gu-yue-fy/guyue-toolbox/main/update.json",
+  "./update.json"
+];
 async function loadUpdate() {
-  try {
-    const res = await fetch("./update.json", { cache: "no-store" });
-    if (!res.ok) return null;
-    return await res.json();
-  } catch (e) {
-    return null;
+  for (let i = 0; i < UPDATE_SOURCES.length; i++) {
+    try {
+      const res = await fetch(UPDATE_SOURCES[i], { cache: "no-store" });
+      if (!res.ok) continue;
+      const data = await res.json();
+      if (data && data.version) return data;
+    } catch (e) {
+      /* 尝试下一个来源 */
+    }
   }
+  return null;
 }
 
 // ====== 读取更新日志 ======

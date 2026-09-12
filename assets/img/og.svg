@@ -15,10 +15,10 @@
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect width="1200" height="630" fill="url(#glow)"/>
-  <rect x="90" y="210" width="124" height="124" rx="30" fill="url(#ac)"/>
-  <text x="152" y="298" font-family="-apple-system, 'PingFang SC','Microsoft YaHei',sans-serif" font-size="74" font-weight="800" text-anchor="middle" fill="#07101a">古</text>
-  <text x="252" y="288" font-family="-apple-system, 'PingFang SC','Microsoft YaHei',sans-serif" font-size="76" font-weight="800" fill="#e8eaed">古月工具箱</text>
-  <text x="254" y="356" font-family="-apple-system, 'PingFang SC','Microsoft YaHei',sans-serif" font-size="42" font-weight="700" fill="url(#ac)">GuyueBox</text>
-  <text x="92" y="470" font-family="-apple-system, 'PingFang SC','Microsoft YaHei',sans-serif" font-size="30" fill="#9aa3b2">让 Windows 重获流畅的原生系统优化工具箱</text>
-  <text x="92" y="520" font-family="-apple-system, 'PingFang SC','Microsoft YaHei',sans-serif" font-size="26" fill="#9aa3b2">27 个功能页 · 167 项优化 · 一键加速清理 · 内置自动更新</text>
+  <rect x="90" y="205" width="124" height="124" rx="30" fill="url(#ac)"/>
+  <text x="152" y="293" font-family="-apple-system, 'PingFang SC','Microsoft YaHei',sans-serif" font-size="74" font-weight="800" text-anchor="middle" fill="#07101a">古</text>
+  <text x="252" y="283" font-family="-apple-system, 'PingFang SC','Microsoft YaHei',sans-serif" font-size="76" font-weight="800" fill="#e8eaed">古月工具包</text>
+  <text x="254" y="351" font-family="-apple-system, 'PingFang SC','Microsoft YaHei',sans-serif" font-size="42" font-weight="700" fill="url(#ac)">GuyueBox</text>
+  <text x="92" y="462" font-family="-apple-system, 'PingFang SC','Microsoft YaHei',sans-serif" font-size="30" fill="#9aa3b2">面向 Windows 的原生系统优化工具包</text>
+  <text x="92" y="512" font-family="-apple-system, 'PingFang SC','Microsoft YaHei',sans-serif" font-size="26" fill="#9aa3b2">170+ 项可逆优化 · 9 大类 · 清理瘦身 · 系统管理 · 免费无广告</text>
 </svg>
