@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>古月工具箱 GuyueBox — 让 Windows 重获流畅的系统优化工具箱</title>
+  <meta name="description" content="古月工具箱 GuyueBox 是一款面向 Windows 的原生系统优化工具箱，C#/WinForms 编写，无需安装 .NET SDK。含 27 个功能页、167 项注册表/服务优化、垃圾与隐私清理、启动项与进程管理、性能跑分与内置自动更新。" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">
+        <span class="logo-mark">古</span>
+        <span class="brand-name">古月工具箱<small>GuyueBox</small></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#features">功能</a>
+        <a href="#why">为什么选</a>
+        <a href="#modules">功能模块</a>
+        <a href="#how">使用</a>
+        <a href="#download">下载</a>
+        <a class="btn-ghost" href="https://github.com/Gu-yue-fy/guyue-toolbox" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 首屏 -->
+  <section class="hero" id="top">
+    <div class="hero-glow"></div>
+    <div class="container hero-inner">
+      <span class="badge">最新版本 <span id="latest-version">v1.0.0</span></span>
+      <h1>古月工具箱 <span class="grad">GuyueBox</span></h1>
+      <p class="tagline">面向 Windows 的原生系统优化工具箱 —— 27 个功能页、167 项优化，一键让老电脑更快更稳。</p>
+      <div class="cta">
+        <a class="btn-primary" href="#download">免费下载</a>
+        <a class="btn-ghost" href="https://github.com/Gu-yue-fy/guyue-toolbox" target="_blank" rel="noopener">在 GitHub 查看</a>
+      </div>
+      <div class="hero-stats">
+        <span><b>27</b> 个功能页</span>
+        <span><b>167</b> 项优化</span>
+        <span><b>0</b> 依赖安装</span>
+        <span><b>Ctrl+K</b> 命令面板</span>
+      </div>
+
+      <!-- 应用界面模拟图（纯 CSS 绘制，无需截图） -->
+      <div class="app-mockup" aria-hidden="true">
+        <div class="app-window">
+          <div class="app-titlebar">
+            <span class="dots"><i></i><i></i><i></i></span>
+            <span class="app-title">古月工具箱 · 系统优化</span>
+            <span class="app-mini">● 已是最新</span>
+          </div>
+          <div class="app-body">
+            <aside class="app-side">
+              <div class="side-item active">⚡ 首页</div>
+              <div class="side-item">🛠 优化中心</div>
+              <div class="side-item">🧹 清理瘦身</div>
+              <div class="side-item">🚀 性能</div>
+              <div class="side-item">🌐 网络维护</div>
+              <div class="side-item">⚙ 系统配置</div>
+            </aside>
+            <main class="app-main">
+              <div class="app-panel">
+                <div class="panel-head">
+                  <span class="panel-title">一键优化</span>
+                  <span class="panel-tag">✓ 安全还原点已创建</span>
+                </div>
+                <button class="mock-btn">开始优化</button>
+                <ul class="opt-list">
+                  <li><span>启用终极性能电源计划</span><span class="sw on"></span></li>
+                  <li><span>屏蔽广告追踪域名</span><span class="sw on"></span></li>
+                  <li><span>清理系统垃圾 2.3 GB</span><span class="sw on"></span></li>
+                  <li><span>禁用无用启动项 6 项</span><span class="sw"></span></li>
+                </ul>
+              </div>
+              <div class="cmd-palette">
+                <div class="cmd-input"><kbd>Ctrl</kbd>+<kbd>K</kbd> 搜索功能、设置、命令…</div>
+                <div class="cmd-item active">⚡ 一键优化</div>
+                <div class="cmd-item">🧹 垃圾清理</div>
+                <div class="cmd-item">🚀 启动项管理</div>
+                <div class="cmd-item">🔒 隐私清理</div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 核心功能 -->
+  <section class="section" id="features">
+    <div class="container">
+      <h2 class="section-title">核心功能</h2>
+      <p class="center-sub">四大模块覆盖「快、净、稳、安」，每一项改动都可独立还原。</p>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3>一键优化</h3>
+          <p>创建系统还原点（安全网）→ 启用终极性能电源计划 → 屏蔽广告追踪域名 → 应用精选优化，全程可逐步回退。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🛠️</div>
+          <h3>优化中心</h3>
+          <p>167 项开关式注册表 / 服务优化，游戏 / 性能 / 网络 / 隐私等八类全覆盖，修改前自动备份、可一键还原。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🧹</div>
+          <h3>清理瘦身</h3>
+          <p>10 类垃圾扫描清理、隐私使用痕迹清除、目录空间分析，以及可随机覆盖擦除的文件粉碎。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🚀</div>
+          <h3>性能与管控</h3>
+          <p>启动项 / 进程管理、服务与计划任务管控、CPU/内存/磁盘性能跑分，网络修复与 DNS 一键切换。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 为什么选 -->
+  <section class="section section-alt" id="why">
+    <div class="container">
+      <h2 class="section-title">为什么选择古月工具箱</h2>
+      <div class="why-grid">
+        <div class="why">
+          <div class="why-icon">🧊</div>
+          <h4>原生纯净</h4>
+          <p>C#/WinForms 原生编写，无广告、无捆绑、不驻留后台，打开即用、关闭即净。</p>
+        </div>
+        <div class="why">
+          <div class="why-icon">🛡️</div>
+          <h4>安全可逆</h4>
+          <p>任何优化前自动创建系统还原点并备份原值，一键还原，新手也敢放心用。</p>
+        </div>
+        <div class="why">
+          <div class="why-icon">🔍</div>
+          <h4>透明可控</h4>
+          <p>167 项优化逐项开关，看得见改了什么、影响哪里，绝不偷偷动手。</p>
+        </div>
+        <div class="why">
+          <div class="why-icon">🔄</div>
+          <h4>持续更新</h4>
+          <p>内置在线检查 / 下载 / 安装更新，基础功能永久免费，常用常新。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 功能模块 -->
+  <section class="section" id="modules">
+    <div class="container">
+      <h2 class="section-title">功能模块一览</h2>
+      <p class="center-sub">全部 27 个功能页，按场景分组，深色全自绘界面、无外部图片资源。</p>
+      <div class="module-grid">
+        <div class="module"><h4>首页</h4><p>系统概览 · 一键优化</p></div>
+        <div class="module"><h4>优化</h4><p>优化中心 · 电源计划</p></div>
+        <div class="module"><h4>清理瘦身</h4><p>垃圾清理 · 隐私清理 · 空间分析 · 文件粉碎</p></div>
+        <div class="module"><h4>性能与授权</h4><p>性能基准 · 激活与更新</p></div>
+        <div class="module"><h4>磁盘与文件</h4><p>磁盘健康 · 启动项 · 进程 · 已安装程序</p></div>
+        <div class="module"><h4>网络与维护</h4><p>网络修复 · 端口占用 · DNS 切换 · 系统还原点</p></div>
+        <div class="module"><h4>系统配置</h4><p>服务 · 可选功能 · 计划任务 · 右键菜单 · 环境变量 · 文件校验 · Hosts</p></div>
+        <div class="module"><h4>全局交互</h4><p>Ctrl+K 命令面板 · Ctrl+1..9 直达 · 状态栏权限提示</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 如何使用 -->
+  <section class="section section-alt" id="how">
+    <div class="container">
+      <h2 class="section-title">三步上手</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h4>下载安装</h4>
+          <p>下载 .exe 安装包，Windows 10/11 已自带 .NET 4.8，双击即装、无需 SDK。</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h4>一键优化</h4>
+          <p>打开首页点「开始优化」，或随时按 <kbd>Ctrl</kbd>+<kbd>K</kbd> 直达任意功能页。</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h4>保持最优</h4>
+          <p>软件自动检查更新，新版本一键安装；定期清理，电脑始终如新。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 下载 -->
+  <section class="section" id="download">
+    <div class="container">
+      <h2 class="section-title">下载</h2>
+      <p class="center-sub">仅支持 Windows，免费下载。点击前往 GitHub 发行版获取安装包。</p>
+      <div class="download-grid">
+        <a class="dl-card" href="https://github.com/Gu-yue-fy/guyue-toolbox/releases/latest" target="_blank" rel="noopener">
+          <span class="dl-os">Windows</span><span class="dl-ext">.exe · 免费</span>
+        </a>
+      </div>
+      <p class="center-sub small">
+        系统要求：Windows 10 / 11 · 需 .NET Framework 4.8（系统已自带）· 无需安装 .NET SDK<br>
+        当前最新版本：<span id="latest-version-2">v1.0.0</span> · 更新于 <span id="latest-date">—</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
+    <div class="container faq-wrap">
+      <h2 class="section-title">常见问题</h2>
+      <details class="faq"><summary>支持哪些操作系统？</summary><p>仅支持 Windows 10 / 11（x64）。需要 .NET Framework 4.8，绝大多数系统已自带，无需额外安装。</p></details>
+      <details class="faq"><summary>古月工具箱收费吗？</summary><p>基础功能永久免费，可以满足日常加速、清理与优化需求；部分高级能力可能提供可选激活，但绝不强制、无广告。</p></details>
+      <details class="faq"><summary>优化会不会把系统搞坏？</summary><p>不会。每一项优化在执行前都会自动创建系统还原点并备份原注册表/服务值，可一键完整还原，新手也能放心使用。</p></details>
+      <details class="faq"><summary>它会收集我的隐私数据吗？</summary><p>不会。古月工具箱在本地运行，不做任何数据上传或用户追踪；「隐私清理」反而是帮你清除本机使用痕迹。</p></details>
+      <details class="faq"><summary>怎么更新到新版本？</summary><p>软件内置在线更新：启动时会自动检查 GitHub 上的最新版本，发现新版本可一键下载安装，无需手动操作。</p></details>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand"><span class="logo-mark">净</span> 古月工具箱<small>GuyueBox</small></div>
+        <p class="footer-note">© <span id="year"></span> 古月工具箱 GuyueBox. 保留所有权利。</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/Gu-yue-fy/guyue-toolbox" target="_blank" rel="noopener">GitHub</a>
+        <a href="#download">下载</a>
+        <a href="#features">功能</a>
+        <a href="#faq">常见问题</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
