@@ -3,5 +3,5 @@
   "date": "2026-09-12",
   "url": "https://github.com/Gu-yue-fy/guyue-toolbox/releases/download/v1.1.0/SysToolbox.exe",
   "sha256": "7d034e2703ed41e1d46ceacf17a9b34eea3724c997f22908cbeffbcb7b88d82a",
-  "notes": "首个公开发布版本：内置自动更新（SHA256 校验）、170+ 项优化、垃圾/隐私清理、启动项与进程管理、性能跑分、网络修复等。"
+  "notes": "首个公开发布版本：内置自动更新（SHA256 校验）、167 项注册表/服务优化、垃圾/隐私清理、启动项与进程管理、性能跑分、网络修复等。"
 }
