@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>页面未找到 · 古月工具箱 GuyueBox</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234cc9f0'/><text x='16' y='23' font-size='20' font-family='sans-serif' font-weight='800' text-anchor='middle' fill='%2307101a'>古</text></svg>" />
+  <style>
+    :root {
+      --bg: #0b0e14; --fg: #e8eaed; --muted: #9aa3b2;
+      --accent: #4cc9f0; --accent-2: #7b6cff; --border: #232a38; --card: #161b27;
+      --grad: linear-gradient(135deg, var(--accent), var(--accent-2));
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      background: var(--bg); color: var(--fg); text-align: center; padding: 24px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Microsoft YaHei", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .glow {
+      position: fixed; top: -160px; left: 50%; transform: translateX(-50%);
+      width: 680px; height: 460px; pointer-events: none;
+      background: radial-gradient(closest-side, rgba(76,201,240,.22), rgba(123,108,255,.12) 60%, transparent 75%);
+      filter: blur(20px);
+    }
+    .wrap { position: relative; max-width: 460px; }
+    .logo {
+      width: 60px; height: 60px; border-radius: 16px; background: var(--grad);
+      color: #07101a; font-size: 30px; font-weight: 800;
+      display: inline-flex; align-items: center; justify-content: center; margin-bottom: 22px;
+    }
+    h1 {
+      font-size: 76px; font-weight: 800; line-height: 1;
+      background: var(--grad); -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p { color: var(--muted); font-size: 16px; margin: 18px 0 30px; }
+    .btn {
+      display: inline-block; padding: 13px 30px; border-radius: 11px;
+      background: var(--grad); color: #07101a; font-weight: 700; font-size: 15px;
+      text-decoration: none; transition: transform .15s;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .back { display: block; margin-top: 18px; color: var(--muted); font-size: 14px; text-decoration: none; }
+    .back:hover { color: var(--fg); }
+  </style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="wrap">
+    <div class="logo">古</div>
+    <h1>404</h1>
+    <p>页面走丢了 —— 你访问的地址不存在，或已被移动。</p>
+    <a class="btn" href="/guyue-toolbox-site/">返回首页</a>
+    <a class="back" href="https://github.com/Gu-yue-fy/guyue-toolbox" target="_blank" rel="noopener">前往 GitHub 仓库 →</a>
+  </div>
+</body>
+</html>

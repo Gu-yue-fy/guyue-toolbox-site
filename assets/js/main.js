@@ -113,3 +113,60 @@ function renderChangelog(list) {
   const cl = await loadChangelog();
   renderChangelog(cl);
 })();
+
+// ====== 移动端汉堡菜单 ======
+(function initMobileNav() {
+  const toggle = document.getElementById("nav-toggle");
+  const links = document.getElementById("nav-links");
+  if (!toggle || !links) return;
+  function setOpen(open) {
+    links.classList.toggle("open", open);
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  }
+  toggle.addEventListener("click", () => setOpen(!links.classList.contains("open")));
+  links.addEventListener("click", (e) => {
+    if (e.target.tagName === "A") setOpen(false);
+  });
+  document.addEventListener("click", (e) => {
+    if (!links.contains(e.target) && !toggle.contains(e.target)) setOpen(false);
+  });
+})();
+
+// ====== 导航滚动高亮（scroll-spy） ======
+(function initScrollSpy() {
+  const links = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'));
+  if (!links.length) return;
+  const map = new Map();
+  links.forEach((a) => {
+    const id = a.getAttribute("href").slice(1);
+    const sec = document.getElementById(id);
+    if (sec) map.set(sec, a);
+  });
+  const sections = Array.from(map.keys());
+  if (!sections.length || !("IntersectionObserver" in window)) return;
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((en) => {
+        if (en.isIntersecting) {
+          links.forEach((a) => a.classList.remove("active"));
+          const target = map.get(en.target);
+          if (target) target.classList.add("active");
+        }
+      });
+    },
+    { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
+  );
+  sections.forEach((s) => io.observe(s));
+})();
+
+// ====== 返回顶部 ======
+(function initToTop() {
+  const btn = document.getElementById("to-top");
+  if (!btn) return;
+  const onScroll = () => {
+    btn.classList.toggle("show", window.scrollY > 600);
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+  btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+})();

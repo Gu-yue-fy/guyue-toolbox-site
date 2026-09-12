@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gu-yue-fy.github.io/guyue-toolbox-site/sitemap.xml
